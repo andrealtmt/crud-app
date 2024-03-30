@@ -6,6 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'modal-login',
+    loadChildren: () => import('./modal-login/modal-login.module').then( m => m.ModalLoginPageModule)
+  },
+  {
+    path: 'modal-signup',
+    loadChildren: () => import('./modal-signup/modal-signup.module').then( m => m.ModalSignupPageModule)
   }
 ];
 

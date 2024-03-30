@@ -25,3 +25,44 @@
 #container a {
   text-decoration: none;
 }
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.logo-container, .buttons-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-container {
+  background-color: #5ACDBD;
+  height: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ion-button {
+  font-family: 'DM Sans';
+  width: 60%;
+  font-weight: 700;
+  height: 3.5rem;
+  margin: 0.5rem;
+  --border-radius: 1rem;
+}
+
+.login-button {
+  --background: #209483;
+}
+
+.signup-button {
+  --background: #085045;
+  --border-width: 0.2rem;
+  --border-style: solid;
+  --border-color: #077968;
+}
